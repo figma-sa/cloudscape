@@ -157,7 +157,7 @@ export default tsEslint.config(
     },
   },
   {
-    files: ['.github/**', 'build-tools/**', 'scripts/**', 'pages/webpack.*', 'jest.*.js', 'gulpfile.js'],
+    files: ['.github/**', 'build-tools/**', 'scripts/**', 'pages/webpack.*', 'pages/vite.config.mjs', 'jest.*.js', 'gulpfile.js'],
     languageOptions: {
       globals: {
         ...globals.node,
