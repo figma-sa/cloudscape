@@ -211,6 +211,13 @@ export default tsEslint.config(
     },
   },
   {
+    files: ['figma/**/*.figma.ts'],
+    rules: {
+      // Code Connect reads `// url=` from the top of the file, so the copyright header cannot lead.
+      'header/header': 'off',
+    },
+  },
+  {
     files: ['src/test-utils/dom/**/*.ts'],
     rules: {
       '@cloudscape-design/build-tools/ban-files': [
