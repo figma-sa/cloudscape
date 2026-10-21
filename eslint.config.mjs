@@ -157,7 +157,7 @@ export default tsEslint.config(
     },
   },
   {
-    files: ['.github/**', 'build-tools/**', 'scripts/**', 'pages/webpack.*', 'jest.*.js', 'gulpfile.js'],
+    files: ['.github/**', 'build-tools/**', 'scripts/**', 'pages/webpack.*', 'pages/vite.config.mjs', 'jest.*.js', 'gulpfile.js'],
     languageOptions: {
       globals: {
         ...globals.node,
@@ -208,6 +208,13 @@ export default tsEslint.config(
       'jest/no-conditional-expect': 'off',
       'jest/no-standalone-expect': 'off',
       'jest/expect-expect': 'off',
+    },
+  },
+  {
+    files: ['figma/**/*.figma.ts'],
+    rules: {
+      // Code Connect reads `// url=` from the top of the file, so the copyright header cannot lead.
+      'header/header': 'off',
     },
   },
   {
