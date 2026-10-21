@@ -19,3 +19,4 @@ vendor/generated-*.txt
 .worktrees
 # These files are auto-generated
 test/visual/*
+.env
